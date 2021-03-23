@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.player-choices {
+    display: inline-block;
+    margin-right: 150px;
+    padding-top: 50px;
+    font-size: 24px;
+}
+
+.player-choices h2 {
+    color: blue;
+}
+
+.cpu-choices h2 {
+    color: red;
+}
+
+.cpu-choices {
+    display: inline-block;
+    margin-left: 150px;
+    padding-top: 50px;
+    font-size: 24px;
+}
+
+.who-won {
+    font-size: 48px;
+    color: yellow;
+}
+
+.player-rock,
+.player-paper,
+.player-scissors,
+.cpu-rock,
+.cpu-paper,
+.cpu-scissors {
+    border: 10px solid black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.player-score-box,
+.cpu-score-box {
+    margin-left: 37%;
+    margin-top: -20px;
+    width: 75px;
+    height: 75px;
+    border: 10px solid black;
+}

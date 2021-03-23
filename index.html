@@ -6,11 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link href="style.css" rel="stylesheet">
     <script src="app.js" defer></script>
 </head>
 
 <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="who-heading" id="who-heading">
+    </div>
+    <div class="player-choices" id="player-choices">
+        <h2>Player</h2>
+        <img src="hand-rock.svg" alt="Rock" class="player-rock" id="player-rock" style="width: 75px; height: 75px;">
+        <img src="hand-paper.svg" alt="Paper" class="player-paper" id="player-paper" style="width: 75px; height: 75px;">
+        <img src="hand-scissors.svg" alt="Scissors" class="player-scissors" id="player-scissors" style="width: 75px; height: 75px;">
+        <div class="player-score" id="player-score">
+            <h3>Player Score</h3>
+            <div class="player-score-box" id="player-score-box"></div>
+        </div>
+    </div>
+    <div class="cpu-choices" id="cpu-choices">
+        <h2>Computer</h2>
+        <img src="hand-rock.svg" alt="Rock" class="cpu-rock" id="cpu-rock" style="width: 75px; height: 75px;">
+        <img src="hand-paper.svg" alt="Paper" class="cpu-paper" id="cpu-paper" style="width: 75px; height: 75px;">
+        <img src="hand-scissors.svg" alt="Scissors" class="cpu-scissors" id="cpu-scissors" style="width: 75px; height: 75px;">
+        <div class="cpu-score">
+            <h3>Computer Score</h3>
+            <div class="cpu-score-box" id="cpu-score-box"></div>
+        </div>
+    </div>
 
+
+    </div>
+    <div class="winner" id="winner">
+        <h2 class="who-won" id="who-won">User Wins Best of Five!</h2>
+
+
+    </div>
 </body>
 
 </html>
