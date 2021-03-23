@@ -1,5 +1,11 @@
+let userChoice = "";
+let computerAnswer = "";
+let p = 0;
+let c = 0;
+
+
 const computerPlay = () => {
-    let computerAnswer = Math.floor(Math.random() * 3);
+    computerAnswer = Math.floor(Math.random() * 3);
     if (computerAnswer === 0) {
         return "rock";
     } else if (computerAnswer === 1) {
@@ -10,7 +16,7 @@ const computerPlay = () => {
 }
 
 const userPlay = () => {
-    let userChoice = prompt("Rock, Paper, or Scissors? ");
+    userChoice = prompt("Rock, Paper, or Scissors? ");
     userChoice = userChoice.toLowerCase();
     return userChoice;
 }
@@ -35,9 +41,30 @@ const determineWinner = (player, cpu) => {
 
 const playGame = (winner) => {
     winner = determineWinner();
-    return winner;
+
+    if (winner === "Player Wins!") {
+        p++;
+        console.log(winner);
+        return winner;
+    } else if (winner === "Computer Wins!") {
+        c++;
+        console.log(winner);
+        return winner;
+    } else {
+        console.log("Tie Game!")
+        return winner;
+    }
 
 }
 
 
-console.log(playGame());
+while (p < 5 && c < 5) {
+    playGame();
+    console.log("Computer Score: ", c);
+    console.log("Player Score: ", p);
+}
+if (p === 5 && c < 5) {
+    console.log("Player Wins First To 5");
+} else {
+    console.log("Computer Wins First To 5");
+}
